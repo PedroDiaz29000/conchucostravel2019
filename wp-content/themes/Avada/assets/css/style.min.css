@@ -1,4 +1,4 @@
-.group {
+/*.group {
     zoom: 1
 }
 
@@ -9,7 +9,7 @@
 
 .group:after {
     clear: both
-}
+}*/
 
 * {
     box-sizing: border-box
@@ -29,7 +29,7 @@
     clear: both
 }
 
-.alignleft {
+/*.alignleft {
     display: inline;
     float: left;
     margin-right: 15px
@@ -47,7 +47,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center
-}
+}*/
 
 .create-block-format-context {
     display: inline-block;
@@ -10232,7 +10232,7 @@ table.tribe-events-tickets-rsvp .tribe-tickets-table .tribe-tickets-order_status
     -moz-osx-font-smoothing: grayscale
 }
 
-.fusion-icon-pen:before {
+/*.fusion-icon-pen:before {
     content: "\e600"
 }
 
@@ -10510,4 +10510,4 @@ table.tribe-events-tickets-rsvp .tribe-tickets-table .tribe-tickets-order_status
 
 .fusion-icon-pinterest2:before {
     content: "\ead2"
-}
+}*/

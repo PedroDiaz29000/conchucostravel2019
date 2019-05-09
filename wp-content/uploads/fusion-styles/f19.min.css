@@ -20983,7 +20983,7 @@ MOVIL  (SX revisamos en 320px)
   span {
     display: none!important;
 }
-#lol .col-lg-4{
+#lol .col-lg-4,.col-md-4,{
     padding-right: 15px!important;
     padding-left: 15px!important;
 }
