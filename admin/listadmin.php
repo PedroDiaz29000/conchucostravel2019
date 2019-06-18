@@ -14,7 +14,7 @@ $result = $Objeto_publicidad->list_titulo();
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Institución</title>
+    <title>Conchucos Travel || Conchucos Travel</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="Shortcut Icon" type="image/x-icon" href="assets/icons/book.ico" />

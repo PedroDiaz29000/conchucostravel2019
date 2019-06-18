@@ -44,7 +44,7 @@ function get_total_all_records()
 
 function Regitro_N($titulo,$detalle,$imagen){
 	include('db.php');
-	$date = date('Y/m/d h:i:s ', time());
+		$date = date('Y/m/d h:i:s ', time());
 		$resul='';
 		$U_id='';
 		$consul1='';		

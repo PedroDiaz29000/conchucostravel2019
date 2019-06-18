@@ -1,11 +1,4 @@
 <?php
-/*-----------------------
-Autor: Obed Alvarado
-http://www.obedalvarado.pw
-Fecha: 12-06-2015
-Version de PHP: 5.6.3
-----------------------------*/
-
 	# conectare la base de datos
     $con=@mysqli_connect('localhost', 'root', '', 'conchucostravel');//reclutando
     if(!$con){

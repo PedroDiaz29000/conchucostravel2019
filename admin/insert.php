@@ -15,10 +15,10 @@ $resul='';
 
 		$resul = Regitro_N($_POST['titulo'],$_POST['detalle'], $image);
 		if($resul==true){
-echo "Se Registro correctamente";
-		}else{
-echo "Error !!";
-		}
+		echo "Se Registro correctamente";
+				}else{
+		echo "Error !!";
+				}
 
 		/*
 		$statement = $connection->prepare("
