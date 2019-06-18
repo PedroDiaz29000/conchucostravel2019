@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2019 a las 08:18:42
--- Versión del servidor: 10.1.25-MariaDB
--- Versión de PHP: 5.6.31
+-- Tiempo de generación: 19-06-2019 a las 00:28:23
+-- Versión del servidor: 10.1.21-MariaDB
+-- Versión de PHP: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -45,6 +43,25 @@ INSERT INTO `acceso` (`usuario`, `clave`, `rol`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `banner`
+--
+
+CREATE TABLE `banner` (
+  `id` int(11) NOT NULL,
+  `idpersona` char(10) DEFAULT NULL,
+  `titulo` varchar(20) DEFAULT NULL,
+  `detalle` longtext,
+  `fecha` datetime DEFAULT NULL,
+  `estado` int(11) DEFAULT NULL,
+  `calificacion` int(11) DEFAULT NULL,
+  `categoria` varchar(50) DEFAULT NULL,
+  `fecha_act` datetime DEFAULT NULL,
+  `area` char(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `contador`
 --
 
@@ -58,7 +75,7 @@ CREATE TABLE `contador` (
 --
 
 INSERT INTO `contador` (`idpk`, `noticia`) VALUES
-(1, 24);
+(1, 27);
 
 -- --------------------------------------------------------
 
@@ -79,7 +96,10 @@ CREATE TABLE `detalle` (
 --
 
 INSERT INTO `detalle` (`id`, `noticia`, `rutafoto`, `orden`, `estado_foto`) VALUES
-(1, 1, 'subidas/24-2019.jpg', '1', '1');
+(1, 1, 'subidas/24-2019.jpg', '1', '1'),
+(2, 2, 'subidas/25-2019.jpg', '1', '1'),
+(3, 3, 'subidas/26-2019.jpg', '1', '1'),
+(4, 4, 'subidas/27-2019.jpg', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -105,7 +125,10 @@ CREATE TABLE `noticia` (
 --
 
 INSERT INTO `noticia` (`id`, `idpersona`, `titulo`, `detalle`, `fecha`, `estado`, `calificacion`, `categoria`, `fecha_act`, `area`) VALUES
-(1, NULL, 'paisaje arco iris co', 'paisaje arco iris conchucano', '2019-06-18 01:17:52', 1, NULL, NULL, NULL, NULL);
+(1, NULL, 'paisaje arco iris co', 'paisaje arco iris conchucano', '2019-06-18 01:17:52', 1, NULL, NULL, NULL, NULL),
+(2, NULL, 'conchucos', 'conchucos', '2019-06-18 10:25:53', 1, NULL, NULL, NULL, NULL),
+(3, NULL, 'rt76768678', 'h', '2019-06-18 11:39:55', 1, NULL, NULL, '2019-06-18 11:04:23', NULL),
+(4, NULL, 'conchucos', 'f', '2019-06-18 04:03:53', 1, NULL, NULL, NULL, NULL);
 
 --
 -- Índices para tablas volcadas
@@ -142,13 +165,12 @@ ALTER TABLE `contador`
 -- AUTO_INCREMENT de la tabla `detalle`
 --
 ALTER TABLE `detalle`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `noticia`
 --
 ALTER TABLE `noticia`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
