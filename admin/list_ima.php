@@ -1,6 +1,5 @@
 ﻿<?php
-//    $con=@mysqli_connect('162.211.86.149', 'rauldiaz_comas', '7bPMyuF(UFVu', 'rauldiaz_web2018');
-	  $con=@mysqli_connect('localhost', 'root', '', 'web2018');
+	  $con=@mysqli_connect('localhost', 'root', '', 'conchucostravel');
 	$id=$_POST['page'];
 
     $consult='SELECT id, rutafoto, estado_foto,orden from detalle  where noticia="'.$id.'" and estado_foto=1';

@@ -7,8 +7,7 @@ Version de PHP: 5.6.3
 ----------------------------*/
 
 	# conectare la base de datos
-//    $con=@mysqli_connect('162.211.86.149', 'rauldiaz_comas', '7bPMyuF(UFVu', 'rauldiaz_web2018');
-    $con=@mysqli_connect('localhost', 'root', '', 'web2018');//reclutando
+    $con=@mysqli_connect('localhost', 'root', '', 'conchucostravel');//reclutando
     if(!$con){
         die("imposible conectarse: ".mysqli_error($con));
     }
