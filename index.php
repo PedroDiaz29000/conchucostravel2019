@@ -245,6 +245,10 @@ MAPA DE CONCHUCOS
 <div class="fusion-row" style="max-width:100%;">
 <section class="full-width" id="content">
 <div class="post-39 page type-page status-publish hentry" id="post-39">
+</div>
+</section>
+</div>
+<!-- FIN DE MENU -->
 <iframe width="110%" height="150%" src="https://www.youtube.com/embed/Srdvbyb6IWY?autoplay=1&amp;controls=0&amp;showinfo=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
  <style>
