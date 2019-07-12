@@ -245,10 +245,6 @@ MAPA DE CONCHUCOS
 <div class="fusion-row" style="max-width:100%;">
 <section class="full-width" id="content">
 <div class="post-39 page type-page status-publish hentry" id="post-39">
-</div>
-</section>
-</div>
-<!-- FIN DE MENU -->
 <iframe width="110%" height="150%" src="https://www.youtube.com/embed/Srdvbyb6IWY?autoplay=1&amp;controls=0&amp;showinfo=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
  <style>
@@ -309,20 +305,7 @@ background-image: url(extras-travel/logos/logo-ico-fa-hover.png);
 </div>
 </div>
 
-<?php
-$cnx= mysql_connect("localhost","root","");
-mysql_select_db('conchucostravel', $cnx);
-$query="select * from bannerdetalle";
-$resul=mysql_query($query); 
-$row=mysql_fetch_array($resul);
-while($Rs=mysql_fetch_array($resul)){
-// echo $Rs['banner'].' '.$Rs['rutafoto'].' '.$Rs['orden'].' '.$Rs['estado_foto'].'<br>';
-// echo "<img src='<?php $Rs['rutafoto'] ";
 
-?>
-<?php echo '<img src="'. $Rs['rutafoto'] .'" alt="icon" width="600px">'; ?>
-
-<?php } ?>
 <div class="container">
   <h2>Lugares que visitar </h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
