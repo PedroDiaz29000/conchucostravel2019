@@ -21017,6 +21017,37 @@ MOVIL  (SX revisamos en 320px)
      background-color: #131; */
 
 }
+#row-redes{
+    margin-right: -15px!important;
+    margin-left: -15px!important;
+}
+
+  #datos-travel   { 
+/*     height: 35%;
+    width: 106%;*/
+    background-color: #22435e;
+ /*   margin-left: -3%;
+     float: left; 
+    padding-left: 350px;
+    margin-top: -9%;
+    position: absolute; 
+      z-index: 2;*/
+}
+
+ #datos-travel a div {
+        /*float: left;*/
+    width: 136px;
+    height: 136px;
+/*        |margin-top: 4%;
+    margin-left: 8%;
+     background-color: #131; */
+
+}
+#row-datos {
+        margin-right: -117px!important;
+    margin-left: -234px!important;
+}
+
 #izq{
     text-align: left; 
 /*    background-color: #22435e;*/
